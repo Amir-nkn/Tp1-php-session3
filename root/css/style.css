@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Playfair+Display:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+html {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #6a89cc, #3b5998);
+    color: #333;
+    line-height: 1.75;
+    padding: 20px;
+}
+
+
+
+/***********************************************************************************************************/
+
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+}
+
+.container:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #f9f9f9;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+table th,
+table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+table th {
+    background-color: #67b7d1;
+    color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: #e8ebf1;
+}
+
+table tr:hover {
+    background-color: #d0d9f2;
+}
+
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px;
+    background: #67b7d1;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: white;
+}
+
+.table-header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    color: white;
+}
+
+.table-header .btn {
+    background-color: white;
+    color: #0033ff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: 0.3s;
+    color: white;
+}
+
+.table-header .btn:hover {
+    background-color: #e0e0e0;
+}
+
+/***************************************************************************************************************/
+/********************************************TYPO***************************************************************/
+
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    border-bottom: 4px solid #0033ff;
+    padding-bottom: 10px;
+    display: inline-block;
+    color: #0022aa;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0033ff;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #0056b3;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #0033ff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+label {
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0033ff;
+    outline: none;
+}
+
+.btn {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px 20px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+
+
+
+
+/***********************************************************************************************************/
+/*******************************************BTN****************************************************************/
+
+
+
+
+.btn {
+    background-image: linear-gradient(to right, #0575E6 0%, #021B79 51%, #0575E6 100%)
+}
+
+.btn {
+
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.back {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+
+
+.btn:hover {
+    background-color: #0022aa;
+    transform: translateY(-2px);
+}
+
+
+.btn.red {
+    background-image: linear-gradient(to right, #e53935 0%, #e35d5b 51%, #e53935 100%)
+}
+
+.btn.red {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.btn.red:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+.btn-edit {
+    background-image: linear-gradient(to right, #003973 0%, #E5E5BE 51%, #003973 100%)
+}
+
+.btn-edit {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 10px 12px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: inline-block;
+    width: 350px;
+}
+
+.btn-edit:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+
+.product-container {
+    width: 90%;
+    max-width: 900px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    padding: 40px;
+    text-align: left;
+    margin: 50px auto;
+}
+
+.product-container h1 {
+    font-size: 2.8rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 25px;
+    text-align: left;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+
+.product-card {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    margin: 20px auto;
+}
+
+.product-card:hover {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+    transform: translateY(-5px);
+}
+
+.product-card h1 {
+    font-size: 2.2rem;
+    color: #0022aa;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #0033ff;
+    padding-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    margin-bottom: 15px;
+    padding: 10px;
+    background: #f8f8f8;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 500;
+}
+
+.product-card strong {
+    font-weight: bold;
+    color: #0033ff;
+}
+
+
+
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
+
+
+
+
+label {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #0033ff;
+    outline: none;
+}
+
+
+
+/***********************************************************************************************************/
+/***********************************************************************************************************/
